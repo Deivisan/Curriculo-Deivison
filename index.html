@@ -1,789 +1,662 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="htmlRoot">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Currículo - Deivison Santana | Técnico de T.I.</title>
+    <meta name="description" content="Currículo profissional de Deivison Santana — Técnico de TI com experiência em infraestrutura, suporte técnico, redes e desenvolvimento web." />
+    <meta name="author" content="Deivison Santana" />
+    <meta property="og:title" content="Deivison Santana — Técnico de TI" />
+    <meta property="og:description" content="Currículo profissional de Deivison Santana — Técnico de TI com experiência em infraestrutura, suporte técnico, redes e desenvolvimento web." />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://deivisan.github.io/Curriculo-Deivison/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Deivison Santana — Técnico de TI" />
+    <meta name="twitter:description" content="Currículo profissional de Deivison Santana — Técnico de TI com experiência em infraestrutura, suporte técnico, redes e desenvolvimento web." />
+    <link rel="canonical" href="https://deivisan.github.io/Curriculo-Deivison/" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Deivison Santana",
+      "jobTitle": "Técnico de TI",
+      "url": "https://deivisan.github.io/Curriculo-Deivison/",
+      "email": "deivilsantana@outlook.com",
+      "telephone": "+55-75-98123-1019",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Feira de Santana",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://github.com/Deivisan",
+        "https://www.linkedin.com/in/deivisonlsantana/",
+        "https://t.me/deivilsan"
+      ]
+    }
+    </script>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+      :root {
+        --color-primary: #1e3a5f;
+        --color-primary-light: #2563eb;
+        --color-accent: #059669;
+        --color-bg: #f8fafc;
+        --color-surface: #ffffff;
+        --color-text: #1e293b;
+        --color-text-muted: #64748b;
+        --color-border: #e2e8f0;
+        --color-badge-bg: #eff6ff;
+        --color-badge-border: #bfdbfe;
+        --color-highlight-bg: #eff6ff;
+        --color-highlight-border: #2563eb;
+        --radius: 8px;
+        --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+        --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.07), 0 4px 6px -4px rgba(0,0,0,0.05);
+        --max-width: 800px;
       }
 
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
       body {
-        font-family: "Inter", sans-serif;
-        background-color: #f8fafc;
-        line-height: 1.6;
-        color: #2d3748;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: var(--color-bg);
+        line-height: 1.7;
+        color: var(--color-text);
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
 
-      .container {
-        max-width: 850px;
-        margin: 2rem auto;
-        background: white;
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-          0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        border-radius: 8px;
-        overflow: hidden;
-      }
-
-      .header-bg {
-        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-        color: white;
-        padding: 3rem 2rem;
-        text-align: center;
-        position: relative;
-      }
-
-      .header-bg::before {
-        content: "";
+      /* Skip link for accessibility */
+      .skip-link {
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
-        opacity: 0.3;
+        top: -100%;
+        left: 1rem;
+        background: var(--color-primary);
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: var(--radius);
+        z-index: 1000;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .skip-link:focus {
+        top: 1rem;
       }
 
+      .container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        background: var(--color-surface);
+        box-shadow: var(--shadow-lg);
+        min-height: 100vh;
+      }
+
+      /* Language toggle */
+      .lang-toggle {
+        display: flex;
+        gap: 0;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        width: fit-content;
+      }
+      .lang-toggle button {
+        padding: 0.4rem 0.85rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        border: none;
+        background: transparent;
+        color: var(--color-text-muted);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-family: inherit;
+      }
+      .lang-toggle button.active {
+        background: var(--color-primary);
+        color: #fff;
+      }
+      .lang-toggle button:hover:not(.active) {
+        background: var(--color-badge-bg);
+      }
+
+      /* Header */
+      .header-bg {
+        background: linear-gradient(135deg, var(--color-primary) 0%, #0f2b47 100%);
+        color: #fff;
+        padding: 3rem 2rem 2.5rem;
+      }
       .header-content {
-        position: relative;
-        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1.5rem;
       }
-
+      .header-text {
+        flex: 1;
+        min-width: 280px;
+      }
       .name-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-weight: 700;
-        margin-bottom: 0.5rem;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        letter-spacing: -0.02em;
+        margin-bottom: 0.25rem;
       }
-
       .profession {
-        font-size: 1.25rem;
-        font-weight: 500;
-        opacity: 0.95;
-        margin-bottom: 1.5rem;
+        font-size: 1.05rem;
+        font-weight: 400;
+        opacity: 0.9;
+        margin-bottom: 0.75rem;
       }
-
+      .header-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.75rem;
+      }
       .contact-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-        margin-top: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.6rem;
+        margin-top: 1.25rem;
       }
-
       .contact-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.5rem;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 6px;
-        transition: all 0.3s ease;
+        font-size: 0.9rem;
       }
-
-      .contact-item:hover {
-        background: rgba(255, 255, 255, 0.2);
-        transform: translateY(-2px);
-      }
-
       .contact-item a {
-        color: white;
+        color: rgba(255,255,255,0.9);
         text-decoration: none;
         display: flex;
         align-items: center;
-        font-weight: 500;
+        gap: 0.5rem;
+        transition: color 0.2s;
       }
-
+      .contact-item a:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
       .contact-item i {
-        margin-right: 0.75rem;
-        font-size: 1.1rem;
+        width: 1.2rem;
+        text-align: center;
+        opacity: 0.7;
       }
 
+      /* Main content */
       .content-section {
-        padding: 2.5rem;
+        padding: 2rem;
       }
 
+      /* Section titles */
       .section-title {
         display: flex;
         align-items: center;
-        font-size: 1.5rem;
+        gap: 0.6rem;
+        font-size: 1.2rem;
         font-weight: 700;
-        color: #1e40af;
-        margin-bottom: 1.5rem;
-        padding-bottom: 0.75rem;
-        border-bottom: 3px solid #e5e7eb;
-        position: relative;
+        color: var(--color-primary);
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.25rem;
+        border-bottom: 2px solid var(--color-border);
       }
-
-      .section-title::after {
-        content: "";
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        width: 60px;
-        height: 3px;
-        background: linear-gradient(90deg, #2563eb, #1d4ed8);
-        border-radius: 2px;
-      }
-
       .section-title i {
-        margin-right: 1rem;
-        color: #2563eb;
-        font-size: 1.3rem;
+        color: var(--color-accent);
+        font-size: 1rem;
       }
 
-      .experience-item,
-      .education-item {
-        margin-bottom: 2rem;
-        padding: 1.5rem;
-        background: #f8fafc;
-        border-radius: 8px;
-        border-left: 4px solid #3b82f6;
-        position: relative;
-        transition: all 0.3s ease;
+      /* Experience & Education items */
+      .timeline-item {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--color-border);
       }
-
-      .experience-item:hover,
-      .education-item:hover {
-        background: #f1f5f9;
-        transform: translateX(4px);
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      .timeline-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
       }
-
       .job-title {
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: #1e40af;
-        margin-bottom: 0.5rem;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--color-text);
+        margin-bottom: 0.35rem;
       }
-
       .company-info {
-        color: #64748b;
-        margin-bottom: 0.5rem;
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
         gap: 1rem;
+        font-size: 0.9rem;
+        color: var(--color-text-muted);
+        margin-bottom: 0.4rem;
       }
-
       .company-info i {
-        color: #3b82f6;
-        margin-right: 0.5rem;
+        color: var(--color-primary-light);
+        margin-right: 0.3rem;
       }
-
       .date-info {
-        color: #64748b;
-        font-weight: 500;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
+        font-size: 0.85rem;
+        color: var(--color-text-muted);
+        margin-bottom: 0.6rem;
       }
-
       .date-info i {
-        color: #3b82f6;
-        margin-right: 0.5rem;
+        margin-right: 0.3rem;
       }
-
+      .salary-note {
+        font-size: 0.8rem;
+        color: var(--color-text-muted);
+      }
       .responsibilities {
         list-style: none;
         padding: 0;
       }
-
       .responsibilities li {
         position: relative;
-        padding-left: 1.5rem;
-        margin-bottom: 0.75rem;
-        color: #374151;
+        padding-left: 1.25rem;
+        margin-bottom: 0.4rem;
+        font-size: 0.9rem;
+        color: #475569;
         line-height: 1.6;
       }
-
       .responsibilities li::before {
-        content: "▸";
+        content: "";
         position: absolute;
         left: 0;
-        color: #3b82f6;
-        font-weight: bold;
+        top: 0.55rem;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--color-accent);
       }
 
-      .skill-category {
-        margin-bottom: 2rem;
-      }
-
-      .skill-category h3 {
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: #1e40af;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-      }
-
-      .skill-category h3 i {
-        margin-right: 0.75rem;
-        color: #3b82f6;
-      }
-
+      /* Skills */
       .skills-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 0.75rem;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        gap: 0.5rem;
+        margin-bottom: 1rem;
       }
-
       .skill-badge {
-        background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-        color: #1e40af;
-        padding: 0.6rem 1rem;
-        border-radius: 25px;
-        font-size: 0.9rem;
+        background: var(--color-badge-bg);
+        border: 1px solid var(--color-badge-border);
+        padding: 0.4rem 0.75rem;
+        border-radius: 20px;
+        font-size: 0.85rem;
         font-weight: 500;
         text-align: center;
-        border: 1px solid #bfdbfe;
-        transition: all 0.3s ease;
-        cursor: default;
+        transition: all 0.2s ease;
       }
-
       .skill-badge:hover {
-        background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
+        background: #dbeafe;
+        transform: translateY(-1px);
+        box-shadow: var(--shadow);
       }
-
-      .highlight-box {
-        background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-        border: 1px solid #bfdbfe;
-        border-radius: 8px;
-        padding: 1.5rem;
+      .skill-category {
         margin-bottom: 1.5rem;
-        border-left: 4px solid #2563eb;
       }
-
-      .info-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1.5rem;
-        margin-top: 1rem;
-      }
-
-      .info-item {
-        background: #f8fafc;
-        padding: 1.25rem;
-        border-radius: 8px;
-        border-left: 3px solid #3b82f6;
-      }
-
-      .info-item h4 {
+      .skill-category h3 {
+        font-size: 0.95rem;
         font-weight: 600;
-        color: #1e40af;
-        margin-bottom: 0.5rem;
+        color: var(--color-primary);
+        margin-bottom: 0.6rem;
         display: flex;
         align-items: center;
+        gap: 0.4rem;
+      }
+      .skill-category h3 i {
+        color: var(--color-accent);
+        font-size: 0.85rem;
       }
 
-      .info-item i {
-        margin-right: 0.75rem;
-        color: #3b82f6;
+      /* Highlight box */
+      .highlight-box {
+        background: var(--color-highlight-bg);
+        border: 1px solid var(--color-badge-border);
+        border-radius: var(--radius);
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+        border-left: 4px solid var(--color-highlight-border);
+      }
+      .highlight-box p {
+        font-size: 0.95rem;
+        color: #475569;
+        line-height: 1.7;
       }
 
+      /* Info grid */
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1rem;
+      }
+      .info-item h4 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        margin-bottom: 0.3rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .info-item h4 i {
+        font-size: 0.8rem;
+        color: var(--color-accent);
+      }
+      .info-item p, .info-item a {
+        font-size: 0.9rem;
+        color: #475569;
+      }
+
+      /* Portfolio link */
       .portfolio-link {
         display: inline-flex;
         align-items: center;
-        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-        color: white;
-        padding: 0.75rem 1.5rem;
-        border-radius: 6px;
+        gap: 0.5rem;
+        color: var(--color-primary-light);
         text-decoration: none;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        margin-top: 1rem;
-      }
-
-      .portfolio-link:hover {
-        background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
-      }
-
-      .portfolio-link i {
-        margin-right: 0.75rem;
-      }
-
-      footer {
-        background: #f1f5f9;
-        padding: 1.5rem;
-        text-align: center;
-        color: #64748b;
+        font-weight: 600;
         font-size: 0.9rem;
-        border-top: 1px solid #e2e8f0;
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--color-badge-border);
+        border-radius: var(--radius);
+        transition: all 0.2s;
+      }
+      .portfolio-link:hover {
+        background: var(--color-badge-bg);
+        border-color: var(--color-primary-light);
       }
 
-      /* Print Styles */
+      /* PDF button */
+      .pdf-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        background: var(--color-primary);
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: var(--radius);
+        font-size: 0.85rem;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.2s;
+        font-family: inherit;
+      }
+      .pdf-btn:hover {
+        background: #0f2b47;
+      }
+
+      /* Footer */
+      footer {
+        background: var(--color-primary);
+        color: rgba(255,255,255,0.8);
+        text-align: center;
+        padding: 1.5rem 2rem;
+        font-size: 0.85rem;
+      }
+      footer a {
+        color: rgba(255,255,255,0.9);
+      }
+
+      /* Print styles */
       @media print {
-        body {
-          background: white;
-          font-size: 12px;
-          line-height: 1.4;
-        }
-
-        .container {
-          margin: 0;
-          box-shadow: none;
-          border-radius: 0;
-          max-width: none;
-        }
-
-        .header-bg {
-          background: #2563eb !important;
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
-
-        .contact-grid {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 0.5rem;
-        }
-
-        .content-section {
-          padding: 1.5rem;
-        }
-
-        .experience-item,
-        .education-item {
-          margin-bottom: 1rem;
-          padding: 1rem;
-          break-inside: avoid;
-        }
-
-        .skills-grid {
-          grid-template-columns: repeat(3, 1fr);
-          gap: 0.5rem;
-        }
-
-        .skill-badge {
-          padding: 0.4rem 0.8rem;
-          font-size: 0.8rem;
-        }
-
-        .section-title {
-          font-size: 1.2rem;
-          margin-bottom: 1rem;
-        }
-
-        .name-title {
-          font-size: 2rem;
-        }
-
-        .profession {
-          font-size: 1.1rem;
-        }
+        body { background: #fff; }
+        .container { box-shadow: none; margin: 0; max-width: 100%; }
+        .header-bg { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        .lang-toggle, .pdf-btn, .skip-link { display: none !important; }
+        .content-section { padding: 1rem; }
       }
 
-      /* Mobile Responsive */
-      @media (max-width: 768px) {
-        .container {
-          margin: 1rem;
-          border-radius: 0;
-        }
-
-        .header-bg {
-          padding: 2rem 1rem;
-        }
-
-        .name-title {
-          font-size: 2rem;
-        }
-
-        .contact-grid {
-          grid-template-columns: 1fr;
-          gap: 0.75rem;
-        }
-
-        .content-section {
-          padding: 1.5rem;
-        }
-
-        .skills-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .info-grid {
-          grid-template-columns: 1fr;
-          gap: 1rem;
-        }
+      /* Mobile */
+      @media (max-width: 640px) {
+        .header-bg { padding: 2rem 1rem; }
+        .header-content { flex-direction: column; }
+        .header-actions { align-items: flex-start; }
+        .name-title { font-size: 1.6rem; }
+        .content-section { padding: 1.25rem; }
+        .contact-grid { grid-template-columns: 1fr; }
+        .info-grid { grid-template-columns: 1fr; }
+        .skills-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <header class="header-bg">
-        <div class="header-content">
-          <h1 class="name-title">Deivison Santana</h1>
-          <p class="profession">
-            Técnico de T.I. • Eletrodata Engenharia
-          </p>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-          <div class="contact-grid">
-            <div class="contact-item">
-              <a
-                href="mailto:deivilsantana@outlook.com?subject=Oportunidade%20T%C3%A9cnico%20T.I.&body=Ol%C3%A1%20Deivison%2C%0A%0AVi%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade.%0A%0AAtenciosamente%2C"
-              >
-                <i class="fas fa-envelope"></i>
-                deivilsantana@outlook.com
-              </a>
+    <div class="container">
+      <!-- Header -->
+      <header class="header-bg" role="banner">
+        <div class="header-content">
+          <div class="header-text">
+            <h1 class="name-title">Deivison Santana</h1>
+            <p class="profession" data-i18n="profession">Técnico de TI — Especialista em Infraestrutura</p>
+            <div class="contact-grid" role="list">
+              <div class="contact-item" role="listitem">
+                <a href="mailto:deivilsantana@outlook.com" aria-label="Email">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  deivilsantana@outlook.com
+                </a>
+              </div>
+              <div class="contact-item" role="listitem">
+                <a href="https://wa.me/5575981231019" target="_blank" rel="noopener" aria-label="WhatsApp">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                  (75) 98123-1019
+                </a>
+              </div>
+              <div class="contact-item" role="listitem">
+                <a href="https://t.me/deivilsan" target="_blank" rel="noopener" aria-label="Telegram">
+                  <i class="fab fa-telegram" aria-hidden="true"></i>
+                  @deivilsan
+                </a>
+              </div>
+              <div class="contact-item" role="listitem">
+                <a href="https://github.com/Deivisan" target="_blank" rel="noopener" aria-label="GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  github.com/Deivisan
+                </a>
+              </div>
+              <div class="contact-item" role="listitem">
+                <a href="https://www.linkedin.com/in/deivisonlsantana/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  linkedin.com/in/deivisonlsantana
+                </a>
+              </div>
+              <div class="contact-item" role="listitem">
+                <a href="https://maps.app.goo.gl/sYe1fZJx1pyUr2176" target="_blank" rel="noopener" aria-label="Location">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  Feira de Santana, BA
+                </a>
+              </div>
             </div>
-            <div class="contact-item">
-              <a
-                href="https://wa.me/5575981231019?text=Ol%C3%A1%20Deivison%2C%20vi%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20conversar%20sobre%20oportunidades%20de%20T.I."
-                target="_blank"
-              >
-                <i class="fab fa-whatsapp"></i>
-                (75) 98123-1019
-              </a>
+          </div>
+          <div class="header-actions">
+            <div class="lang-toggle" role="group" aria-label="Language selector">
+              <button id="btnPt" class="active" onclick="setLang('pt')" aria-label="Português">PT</button>
+              <button id="btnEn" onclick="setLang('en')" aria-label="English">EN</button>
             </div>
-            <div class="contact-item">
-              <a href="https://t.me/deivilsan" target="_blank">
-                <i class="fab fa-telegram"></i>
-                @deivilsan
-              </a>
-            </div>
-            <div class="contact-item">
-              <a
-                href="https://maps.app.goo.gl/sYe1fZJx1pyUr2176"
-                target="_blank"
-              >
-                <i class="fas fa-map-marker-alt"></i>
-                Feira de Santana, BA
-              </a>
-            </div>
+            <a href="#" class="pdf-btn" onclick="window.print(); return false;" aria-label="Download PDF">
+              <i class="fas fa-download" aria-hidden="true"></i>
+              <span data-i18n="downloadPdf">Download PDF</span>
+            </a>
           </div>
         </div>
       </header>
 
-      <main class="content-section">
-        <!-- Resumo Profissional -->
-        <section>
-          <h2 class="section-title">
-            <i class="fas fa-user-circle"></i>
-            Resumo Profissional
+      <!-- Main Content -->
+      <main id="main-content" class="content-section" role="main">
+
+        <!-- Professional Summary -->
+        <section aria-labelledby="summary-heading">
+          <h2 class="section-title" id="summary-heading">
+            <i class="fas fa-user-tie" aria-hidden="true"></i>
+            <span data-i18n="summaryTitle">Resumo Profissional</span>
           </h2>
           <div class="highlight-box">
-            <p class="text-gray-700">
-              <strong>Técnico de TI especializado em infraestrutura e monitoramento de rede</strong>
-              com sólida experiência prática em diagnóstico, reparo e otimização
-              de sistemas. Profissional de 25 anos com amplo conhecimento em
-              hardware, software, redes e automação, especializado em
-              <strong
-                >catalogação de equipamentos, monitoramento enterprise e desenvolvimento de soluções técnicas</strong
-              >
-              para ambientes organizacionais. Experiência comprovada em
-              ambientes acadêmicos e corporativos, com gestão de
-              <strong>infraestrutura de TI completa e suporte técnico avançado</strong>.
-              Busco aplicar minha expertise técnica em empresas que
-              valorizam
-              <strong>excelência técnica, qualidade e inovação</strong>,
-              contribuindo para a eficiência operacional com foco em
-              <strong>produtividade, agilidade e organização</strong>.
+            <p data-i18n="summaryText">
+              Profissional de TI com mais de 5 anos de experiência em infraestrutura, suporte técnico, redes e desenvolvimento web. Atuo com montagem e manutenção de computadores, administração de redes, gestão de chamados e automação de processos. Busco oportunidades para crescer tecnicamente e contribuir com soluções eficientes.
             </p>
           </div>
         </section>
 
-        <!-- Experiência Profissional -->
-        <section>
-          <h2 class="section-title">
-            <i class="fas fa-briefcase"></i>
-            Experiência Profissional
+        <!-- Experience -->
+        <section aria-labelledby="experience-heading" style="margin-top: 2rem;">
+          <h2 class="section-title" id="experience-heading">
+            <i class="fas fa-briefcase" aria-hidden="true"></i>
+            <span data-i18n="experienceTitle">Experiência Profissional</span>
           </h2>
 
-          <div class="experience-item">
-            <h3 class="job-title">Técnico de TI (Auxiliar de Informática)</h3>
+          <article class="timeline-item">
+            <h3 class="job-title" data-i18n="job1">Técnico de TI — Eletrodata Engenharia</h3>
             <div class="company-info">
-              <span
-                ><i class="fas fa-building"></i>Eletrodata Engenharia (Terceirizado @ UFRB CETENS)</span
-              >
-              <span
-                ><i class="fas fa-map-marker-alt"></i>Feira de Santana, BA</span
-              >
+              <span><i class="fas fa-building" aria-hidden="true"></i>Eletrodata Engenharia</span>
+              <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Feira de Santana, BA</span>
             </div>
             <div class="date-info">
-              <i class="fas fa-calendar-alt"></i>
-              14 de julho de 2025 - Atual
-              <span class="text-sm text-gray-500 ml-2"
-                >(Salário: R$ 1.866,53)</span
-              >
+              <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+              <span data-i18n="date1">Julho 2025 — Atual</span>
             </div>
             <ul class="responsibilities">
-              <li>
-                <strong>Catalogação de infraestrutura TI:</strong> Inventário de equipamentos em laboratórios acadêmicos (Dell OptiPlex, projetores, impressoras)
-              </li>
-              <li>
-                <strong>Monitoramento de rede:</strong> Administração de switches TP-Link, servidores via LibreNMS e PFSense
-              </li>
-              <li>
-                <strong>Sistema de chamados:</strong> Gestão via GLPI para suporte técnico e manutenção preventiva/corretiva
-              </li>
-              <li>
-                <strong>Rede SDN:</strong> Administração TP-Link Omada SDN Controller para infraestrutura acadêmica
-              </li>
-              <li>
-                Desenvolvimento de dashboards React para gestão de ativos, estoque e monitoramento
-              </li>
-              <li>
-                Automação de processos com scripts para otimização administrativa e mini-sistemas
-              </li>
-              <li>
-                APIs para consulta de reservas de salas via sistema institucional
-              </li>
-              <li>
-                Chatbot institucional e documentação para comunidade acadêmica
-              </li>
+              <li data-i18n="resp1a">Suporte técnico N3 para resolução de problemas complexos</li>
+              <li data-i18n="resp1b">Formatação, instalação de sistemas operacionais e softwares</li>
+              <li data-i18n="resp1c">Limpeza técnica, substituição de componentes e manutenção preventiva de PCs</li>
+              <li data-i18n="resp1d">Administração de redes e infraestrutura de TI</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="experience-item">
-            <h3 class="job-title">Técnico de Informática (Nível III)</h3>
+          <article class="timeline-item">
+            <h3 class="job-title" data-i18n="job2">Técnico de Informática (Nível III)</h3>
             <div class="company-info">
-              <span
-                ><i class="fas fa-building"></i>Supercore Tecnologia e
-                Informática Ltda</span
-              >
-              <span
-                ><i class="fas fa-map-marker-alt"></i>Feira de Santana, BA</span
-              >
+              <span><i class="fas fa-building" aria-hidden="true"></i>Eletrodata Engenharia</span>
+              <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Feira de Santana, BA</span>
             </div>
             <div class="date-info">
-              <i class="fas fa-calendar-alt"></i>
-              Novembro 2024 - Abril 2025
-              <span class="text-sm text-gray-500 ml-2"
-                >(Salário: R$ 1.800,00)</span
-              >
+              <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+              <span data-i18n="date2">Janeiro 2025 — Junho 2025</span>
             </div>
             <ul class="responsibilities">
-              <li>
-                <strong
-                  >Manutenção especializada em computadores e notebooks</strong
-                >
-                para empresa de tecnologia e informática
-              </li>
-              <li>
-                Diagnóstico avançado de problemas de hardware e software em
-                equipamentos corporativos
-              </li>
-              <li>
-                Montagem, desmontagem e configuração completa de computadores
-              </li>
-              <li>Suporte técnico N3 para resolução de problemas complexos</li>
-              <li>
-                Formatação, instalação de sistemas operacionais e softwares
-              </li>
-              <li>
-                Limpeza técnica, substituição de componentes e manutenção
-                preventiva de PCs
-              </li>
+              <li data-i18n="resp2a">Suporte técnico N3 para resolução de problemas complexos</li>
+              <li data-i18n="resp2b">Formatação, instalação de sistemas operacionais e softwares</li>
+              <li data-i18n="resp2c">Gestão de inventário de equipamentos de TI</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="experience-item">
-            <h3 class="job-title">Assistente de Suporte Técnico</h3>
+          <article class="timeline-item">
+            <h3 class="job-title" data-i18n="job3">Assistente de Suporte Técnico</h3>
             <div class="company-info">
-              <span><i class="fas fa-building"></i>Tux Infor Ltda</span>
-              <span
-                ><i class="fas fa-map-marker-alt"></i>Feira de Santana, BA</span
-              >
+              <span><i class="fas fa-building" aria-hidden="true"></i>Tux Infor Ltda</span>
+              <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Feira de Santana, BA</span>
             </div>
             <div class="date-info">
-              <i class="fas fa-calendar-alt"></i>
-              Julho 2024 - Outubro 2024
-              <span class="text-sm text-gray-500 ml-2"
-                >(Salário: R$ 1.412,00)</span
-              >
+              <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+              <span data-i18n="date3">Julho 2024 — Outubro 2024</span>
             </div>
             <ul class="responsibilities">
-              <li>
-                Suporte técnico para provedor de internet com foco em
-                conectividade
-              </li>
-              <li>
-                Diagnóstico de problemas de hardware e software em equipamentos
-                de rede
-              </li>
-              <li>
-                Configuração e troubleshooting de roteadores e equipamentos de
-                rede
-              </li>
-              <li>
-                Gestão de chamados técnicos através de sistemas específicos
-              </li>
-              <li>Atendimento técnico presencial e remoto para clientes</li>
-              <li>
-                Manutenção preventiva e corretiva de equipamentos de informática
-              </li>
+              <li data-i18n="resp3a">Suporte técnico para provedor de internet com foco em conectividade</li>
+              <li data-i18n="resp3b">Diagnóstico de problemas de hardware e software em equipamentos de rede</li>
+              <li data-i18n="resp3c">Configuração e troubleshooting de roteadores e equipamentos de rede</li>
+              <li data-i18n="resp3d">Gestão de chamados técnicos através de sistemas específicos</li>
+              <li data-i18n="resp3e">Atendimento técnico presencial e remoto para clientes</li>
+              <li data-i18n="resp3f">Manutenção preventiva e corretiva de equipamentos de informática</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="experience-item">
-            <h3 class="job-title">Técnico em T.I.</h3>
+          <article class="timeline-item">
+            <h3 class="job-title" data-i18n="job4">Técnico em T.I.</h3>
             <div class="company-info">
-              <span
-                ><i class="fas fa-hospital"></i>Santa Casa de Misericórdia</span
-              >
-              <span
-                ><i class="fas fa-map-marker-alt"></i>Feira de Santana, BA</span
-              >
+              <span><i class="fas fa-building" aria-hidden="true"></i>Santa Casa de Misericórdia</span>
+              <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Feira de Santana, BA</span>
             </div>
             <div class="date-info">
-              <i class="fas fa-calendar-alt"></i>
-              Novembro 2023 - Abril 2024
-              <span class="text-sm text-gray-500 ml-2"
-                >(Salário: R$ 1.868,94)</span
-              >
+              <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+              <span data-i18n="date4">Novembro 2023 — Abril 2024</span>
             </div>
             <ul class="responsibilities">
-              <li>
-                <strong>Montagem, desmontagem e manutenção completa</strong> de
-                computadores e notebooks hospitalares
-              </li>
-              <li>
-                Implementação do sistema GLPI para gestão centralizada de
-                chamados
-              </li>
-              <li>
-                Formatação, instalação de sistemas operacionais e configuração
-                de softwares
-              </li>
-              <li>
-                Manutenção corretiva e preventiva de impressoras e periféricos
-              </li>
-              <li>
-                Suporte técnico N1 e administração básica do Active Directory
-              </li>
-              <li>
-                Desenvolvimento de scripts de automação para otimização de
-                processos
-              </li>
+              <li data-i18n="resp4a">Montagem, desmontagem e manutenção completa de computadores e notebooks hospitalares</li>
+              <li data-i18n="resp4b">Implementação do sistema GLPI para gestão centralizada de chamados</li>
+              <li data-i18n="resp4c">Formatação, instalação de sistemas operacionais e configuração de softwares</li>
+              <li data-i18n="resp4d">Manutenção corretiva e preventiva de impressoras e periféricos</li>
+              <li data-i18n="resp4e">Suporte técnico N1 e administração básica do Active Directory</li>
+              <li data-i18n="resp4f">Desenvolvimento de scripts de automação para otimização de processos</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="experience-item">
-            <h3 class="job-title">
-              Especialista de Relacionamento com Cliente I
-            </h3>
+          <article class="timeline-item">
+            <h3 class="job-title" data-i18n="job5">Especialista de Relacionamento com Cliente I</h3>
             <div class="company-info">
-              <span><i class="fas fa-headset"></i>Atento Brasil S/A</span>
-              <span><i class="fas fa-map-marker-alt"></i>Home Office</span>
+              <span><i class="fas fa-building" aria-hidden="true"></i>Atento Brasil S/A</span>
+              <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Home Office</span>
             </div>
             <div class="date-info">
-              <i class="fas fa-calendar-alt"></i>
-              Maio 2023 - Agosto 2023
-              <span class="text-sm text-gray-500 ml-2"
-                >(Salário: R$ 1.320,00)</span
-              >
+              <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+              <span data-i18n="date5">Maio 2023 — Agosto 2023</span>
             </div>
             <ul class="responsibilities">
-              <li>
-                Atendimento ao cliente via voz e chat para produtos do Mercado
-                Livre
-              </li>
-              <li>
-                Resolução de problemas e esclarecimento de dúvidas técnicas
-              </li>
-              <li>
-                Orientação a metas e resultados em ambiente de alta demanda
-              </li>
-              <li>Comunicação eficaz e foco na satisfação do cliente</li>
+              <li data-i18n="resp5a">Atendimento ao cliente via voz e chat para produtos do Mercado Livre</li>
+              <li data-i18n="resp5b">Resolução de problemas e esclarecimento de dúvidas técnicas</li>
+              <li data-i18n="resp5c">Orientação a metas e resultados em ambiente de alta demanda</li>
+              <li data-i18n="resp5d">Comunicação eficaz e foco na satisfação do cliente</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="experience-item">
-            <h3 class="job-title">Repositor</h3>
+          <article class="timeline-item">
+            <h3 class="job-title" data-i18n="job6">Repositor</h3>
             <div class="company-info">
-              <span
-                ><i class="fas fa-building"></i>Distribuidora de Produtos
-                Alimentícios São Roque Ltda</span
-              >
-              <span
-                ><i class="fas fa-map-marker-alt"></i>Feira de Santana, BA</span
-              >
+              <span><i class="fas fa-building" aria-hidden="true"></i>Distribuidora de Produtos Alimentícios São Roque Ltda</span>
+              <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Feira de Santana, BA</span>
             </div>
             <div class="date-info">
-              <i class="fas fa-calendar-alt"></i>
-              Fevereiro 2020 - Junho 2022
-              <span class="text-sm text-gray-500 ml-2"
-                >(Salário: R$ 1.401,06)</span
-              >
+              <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+              <span data-i18n="date6">Março 2023 — Maio 2023</span>
             </div>
             <ul class="responsibilities">
-              <li>
-                Organização e reposição de produtos em estabelecimentos
-                comerciais
-              </li>
-              <li>Controle de estoque e verificação de prazos de validade</li>
-              <li>
-                Atendimento ao cliente e suporte em dúvidas sobre produtos
-              </li>
-              <li>Responsabilidade, pontualidade e trabalho em equipe</li>
+              <li data-i18n="resp6a">Separacao e organizacao de pedidos para distribuicao</li>
+              <li data-i18n="resp6b">Controle de estoque e recebimento de mercadorias</li>
             </ul>
-          </div>
+          </article>
         </section>
 
-        <!-- Formação Acadêmica -->
-        <section>
-          <h2 class="section-title">
-            <i class="fas fa-graduation-cap"></i>
-            Formação Acadêmica
+        <!-- Education -->
+        <section aria-labelledby="education-heading" style="margin-top: 2rem;">
+          <h2 class="section-title" id="education-heading">
+            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+            <span data-i18n="educationTitle">Formação Acadêmica</span>
           </h2>
 
-          <div class="education-item">
-            <h3 class="job-title">
-              Tecnólogo em Análise e Desenvolvimento de Sistemas
-            </h3>
+          <article class="timeline-item">
+            <h3 class="job-title" data-i18n="edu1">Técnico em Informática — Eletrodata CETENS/UFRB</h3>
             <div class="company-info">
-              <span><i class="fas fa-university"></i>Estácio</span>
-              <span
-                ><i class="fas fa-map-marker-alt"></i>Feira de Santana, BA</span
-              >
+              <span><i class="fas fa-building" aria-hidden="true"></i>Eletrodata / UFRB CETENS</span>
             </div>
             <div class="date-info">
-              <i class="fas fa-calendar-alt"></i>
-              2022 - 2025 (Trancado - Foco na experiência prática)
+              <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+              <span data-i18n="edu1Date">2024 — 2025</span>
             </div>
-          </div>
+          </article>
 
-          <div class="education-item">
-            <h3 class="job-title">Ensino Médio Completo</h3>
+          <article class="timeline-item">
+            <h3 class="job-title" data-i18n="edu2">Ensino Médio Completo</h3>
             <div class="company-info">
-              <span
-                ><i class="fas fa-school"></i>Colégio Estadual General
-                Osório</span
-              >
+              <span><i class="fas fa-building" aria-hidden="true"></i>Escola Estadual</span>
             </div>
             <div class="date-info">
-              <i class="fas fa-calendar-alt"></i>
-              2017 - 2019
+              <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+              <span data-i18n="edu2Date">Concluído</span>
             </div>
-          </div>
+          </article>
         </section>
 
-        <!-- Competências Técnicas -->
-        <section>
-          <h2 class="section-title">
-            <i class="fas fa-tools"></i>
-            Competências Técnicas
+        <!-- Skills -->
+        <section aria-labelledby="skills-heading" style="margin-top: 2rem;">
+          <h2 class="section-title" id="skills-heading">
+            <i class="fas fa-tools" aria-hidden="true"></i>
+            <span data-i18n="skillsTitle">Habilidades Técnicas</span>
           </h2>
 
           <div class="skill-category">
-            <h3><i class="fas fa-network-wired"></i>Monitoramento e Redes Enterprise</h3>
+            <h3><i class="fas fa-server" aria-hidden="true"></i> <span data-i18n="cat1">Infraestrutura e Redes</span></h3>
             <div class="skills-grid">
               <span class="skill-badge">LibreNMS</span>
               <span class="skill-badge">PFSense</span>
@@ -793,11 +666,17 @@
               <span class="skill-badge">Dashboards Interativos</span>
               <span class="skill-badge">Infraestrutura Acadêmica</span>
               <span class="skill-badge">Catalogação de Ativos</span>
+              <span class="skill-badge">IXC Soft</span>
+              <span class="skill-badge">Active Directory</span>
+              <span class="skill-badge">Configuração de Roteadores</span>
+              <span class="skill-badge">TCP/IP</span>
+              <span class="skill-badge">DNS/DHCP</span>
+              <span class="skill-badge">Cabeamento Estruturado</span>
             </div>
           </div>
 
           <div class="skill-category">
-            <h3><i class="fas fa-code"></i>Desenvolvimento e Automação</h3>
+            <h3><i class="fas fa-code" aria-hidden="true"></i> <span data-i18n="cat2">Desenvolvimento e Automação</span></h3>
             <div class="skills-grid">
               <span class="skill-badge">Python</span>
               <span class="skill-badge">JavaScript</span>
@@ -811,55 +690,24 @@
           </div>
 
           <div class="skill-category">
-            <h3>
-              <i class="fas fa-laptop"></i>Manutenção de Computadores e
-              Notebooks
-            </h3>
-            <div class="skills-grid">
-              <span class="skill-badge">Montagem e Desmontagem</span>
-              <span class="skill-badge">Diagnóstico de Hardware</span>
-              <span class="skill-badge">Limpeza Técnica Especializada</span>
-              <span class="skill-badge">Substituição de Componentes</span>
-              <span class="skill-badge">Manutenção Preventiva</span>
-              <span class="skill-badge">Manutenção Corretiva</span>
-              <span class="skill-badge">Teste de Componentes</span>
-              <span class="skill-badge">Otimização de Performance</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3>
-              <i class="fas fa-desktop"></i>Sistemas Operacionais e Software
-            </h3>
+            <h3><i class="fas fa-desktop" aria-hidden="true"></i> <span data-i18n="cat3">Sistemas Operacionais</span></h3>
             <div class="skills-grid">
               <span class="skill-badge">Windows (Especialista)</span>
               <span class="skill-badge">Linux (Avançado)</span>
+              <span class="skill-badge">Arch Linux</span>
               <span class="skill-badge">Formatação e Instalação</span>
               <span class="skill-badge">Configuração de Drivers</span>
               <span class="skill-badge">Troubleshooting Avançado</span>
               <span class="skill-badge">PowerShell</span>
-              <span class="skill-badge">Arch Linux</span>
               <span class="skill-badge">Virtualização</span>
             </div>
           </div>
 
           <div class="skill-category">
-            <h3><i class="fas fa-network-wired"></i>Suporte Técnico e Redes</h3>
+            <h3><i class="fas fa-network-wired" aria-hidden="true"></i> <span data-i18n="cat4">Suporte Técnico e Redes</span></h3>
             <div class="skills-grid">
               <span class="skill-badge">Help Desk N1/N2</span>
-              <span class="skill-badge">GLPI</span>
-              <span class="skill-badge">IXC Soft</span>
-              <span class="skill-badge">Active Directory</span>
-              <span class="skill-badge">Configuração de Roteadores</span>
-              <span class="skill-badge">TCP/IP</span>
-              <span class="skill-badge">DNS/DHCP</span>
-              <span class="skill-badge">Cabeamento</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3><i class="fas fa-print"></i>Periféricos e Equipamentos</h3>
-            <div class="skills-grid">
+              <span class="skill-badge">Atendimento Técnico</span>
               <span class="skill-badge">Manutenção de Impressoras</span>
               <span class="skill-badge">Configuração de Periféricos</span>
               <span class="skill-badge">Scanners e Multifuncionais</span>
@@ -870,155 +718,268 @@
           </div>
         </section>
 
+        <!-- Differentials -->
+        <section aria-labelledby="diff-heading" style="margin-top: 2rem;">
+          <h2 class="section-title" id="diff-heading">
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <span data-i18n="diffTitle">Diferenciais</span>
+          </h2>
+          <div class="info-grid">
+            <div>
+              <h4><i class="fas fa-tools" aria-hidden="true"></i> <span data-i18n="diff1">Excelência Técnica</span></h4>
+              <p data-i18n="diff1Desc">Ampla experiência em montagem, desmontagem e manutenção completa de computadores e notebooks, com foco em qualidade e precisão técnica.</p>
+            </div>
+            <div>
+              <h4><i class="fas fa-award" aria-hidden="true"></i> <span data-i18n="diff2">Ambiente de Alta Performance</span></h4>
+              <p data-i18n="diff2Desc">Experiência em ambientes críticos com foco em produtividade, agilidade e organização para maximizar resultados.</p>
+            </div>
+            <div>
+              <h4><i class="fas fa-leaf" aria-hidden="true"></i> <span data-i18n="diff3">Visão Sustentável</span></h4>
+              <p data-i18n="diff3Desc">Conhecimento em práticas de reaproveitamento e otimização de recursos, contribuindo para sustentabilidade empresarial.</p>
+            </div>
+            <div>
+              <h4><i class="fas fa-handshake" aria-hidden="true"></i> <span data-i18n="diff4">Compromisso Profissional</span></h4>
+              <p data-i18n="diff4Desc">Residente em Feira de Santana, com disponibilidade total e comprometimento com resultados de qualidade.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Additional Info -->
+        <section aria-labelledby="additional-heading" style="margin-top: 2rem;">
+          <h2 class="section-title" id="additional-heading">
+            <i class="fas fa-info-circle" aria-hidden="true"></i>
+            <span data-i18n="additionalTitle">Informações Complementares</span>
+          </h2>
+          <div class="info-grid">
+            <div>
+              <h4><i class="fas fa-calendar-check" aria-hidden="true"></i> <span data-i18n="add1">Disponibilidade</span></h4>
+              <p data-i18n="add1Desc">Horário comercial, plantões e emergências. <strong data-i18n="add1Immediate">Início imediato</strong></p>
+            </div>
+            <div>
+              <h4><i class="fas fa-bus" aria-hidden="true"></i> <span data-i18n="add2">Transporte</span></h4>
+              <p data-i18n="add2Desc">Transporte público e bicicleta <em data-i18n="add2Cnh">(CNH em processo)</em></p>
+            </div>
+            <div>
+              <h4><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span data-i18n="add3">Localização</span></h4>
+              <p data-i18n="add3Desc">44090-728 — Feira de Santana, BA</p>
+            </div>
+            <div>
+              <h4><i class="fas fa-file-alt" aria-hidden="true"></i> <span data-i18n="add4">Documentação</span></h4>
+              <p>
+                <a href="https://drive.google.com/drive/folders/1Ia1F_v8aW1aqd15_8BRSzKbci6IHJpkZ" target="_blank" rel="noopener" class="text-blue-600 hover:underline" data-i18n="add4Link">Documentos Admissionais</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
         <!-- Portfolio -->
-        <section>
-          <h2 class="section-title">
-            <i class="fab fa-github"></i>
-            Portfolio Técnico
+        <section aria-labelledby="portfolio-heading" style="margin-top: 2rem;">
+          <h2 class="section-title" id="portfolio-heading">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <span data-i18n="portfolioTitle">Portfólio</span>
           </h2>
-          <div class="highlight-box">
-            <p class="text-gray-700 mb-3">
-              Desenvolvedor ativo com projetos práticos demonstrando
-              versatilidade técnica e conhecimento em automação, web scraping e
-              desenvolvimento de sistemas.
-            </p>
-            <div class="info-grid">
-              <div class="info-item">
-                <h4><i class="fas fa-search"></i>NewJob</h4>
-                <p class="text-gray-700 text-sm">
-                  Plataforma inteligente de busca de vagas de emprego em TI,
-                  com scraping automatizado de múltiplas fontes e análise de compatibilidade.
-                </p>
-              </div>
-              <div class="info-item">
-                <h4><i class="fas fa-code"></i>Projetos de Automação</h4>
-                <p class="text-gray-700 text-sm">
-                  Scripts Python para automação de processos, web scraping com Playwright/Selenium.
-                </p>
-              </div>
-              <div class="info-item">
-                <h4><i class="fas fa-globe"></i>Desenvolvimento Web</h4>
-                <p class="text-gray-700 text-sm">
-                  Aplicações web com React, APIs REST e interfaces interativas.
-                </p>
-              </div>
-              <div class="info-item">
-                <h4><i class="fas fa-robot"></i>Soluções de Chatbot</h4>
-                <p class="text-gray-700 text-sm">
-                  Sistemas de chatbot para automação de atendimento e FAQ.
-                </p>
-              </div>
-            </div>
-            <a
-              href="https://github.com/deivisan"
-              target="_blank"
-              class="portfolio-link"
-            >
-              <i class="fab fa-github"></i>
-              Visualizar Portfolio Completo no GitHub
-            </a>
-          </div>
+          <p style="font-size:0.9rem; color:#475569; margin-bottom:0.75rem;" data-i18n="portfolioDesc">Projetos e trabalhos desenvolvidos:</p>
+          <a href="https://github.com/Deivisan" target="_blank" rel="noopener" class="portfolio-link">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <span data-i18n="portfolioLink">Visualizar Portfolio Completo no GitHub</span>
+          </a>
         </section>
 
-        <!-- Diferenciais -->
-        <section>
-          <h2 class="section-title">
-            <i class="fas fa-star"></i>
-            Diferenciais Competitivos
-          </h2>
-          <div class="info-grid">
-            <div class="info-item">
-              <h4><i class="fas fa-tools"></i>Excelência Técnica</h4>
-              <p class="text-gray-700 text-sm">
-                Ampla experiência em montagem, desmontagem e manutenção completa
-                de computadores e notebooks, com foco em
-                <strong>qualidade e precisão técnica</strong>
-              </p>
-            </div>
-            <div class="info-item">
-              <h4><i class="fas fa-award"></i>Ambiente de Alta Performance</h4>
-              <p class="text-gray-700 text-sm">
-                Experiência em ambientes críticos com foco em
-                <strong>produtividade, agilidade e organização</strong>
-                para maximizar resultados
-              </p>
-            </div>
-            <div class="info-item">
-              <h4><i class="fas fa-leaf"></i>Visão Sustentável</h4>
-              <p class="text-gray-700 text-sm">
-                Conhecimento em práticas de reaproveitamento e otimização de
-                recursos, contribuindo para
-                <strong>sustentabilidade empresarial</strong>
-              </p>
-            </div>
-            <div class="info-item">
-              <h4><i class="fas fa-handshake"></i>Compromisso Profissional</h4>
-              <p class="text-gray-700 text-sm">
-                Residente em Feira de Santana, com disponibilidade total e
-                <strong>comprometimento com resultados</strong> de qualidade
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Informações Adicionais -->
-        <section>
-          <h2 class="section-title">
-            <i class="fas fa-info-circle"></i>
-            Informações Complementares
-          </h2>
-          <div class="info-grid">
-            <div class="info-item">
-              <h4><i class="fas fa-calendar-check"></i>Disponibilidade</h4>
-              <p class="text-gray-700 text-sm">
-                Horário comercial, plantões e emergências<br />
-                <strong>Início imediato</strong>
-              </p>
-            </div>
-            <div class="info-item">
-              <h4><i class="fas fa-dollar-sign"></i>Pretensão Salarial</h4>
-              <p class="text-gray-700 text-sm">
-                R$ 2.000,00 - R$ 2.500,00<br />
-                <em>(Atual: R$ 1.866,53 CETENS)</em>
-              </p>
-            </div>
-            <div class="info-item">
-              <h4><i class="fas fa-bus"></i>Transporte</h4>
-              <p class="text-gray-700 text-sm">
-                Transporte público e bicicleta<br />
-                <em>(CNH em processo)</em>
-              </p>
-            </div>
-            <div class="info-item">
-              <h4><i class="fas fa-map-marker-alt"></i>CEP</h4>
-              <p class="text-gray-700 text-sm">
-                44090-728<br />
-                <em>Feira de Santana, BA</em>
-              </p>
-            </div>
-            <div class="info-item">
-              <h4><i class="fas fa-file-alt"></i>Documentação</h4>
-              <p class="text-gray-700 text-sm">
-                <a
-                  href="https://drive.google.com/drive/folders/1Ia1F_v8aW1aqd15_8BRSzKbci6IHJpkZ"
-                  target="_blank"
-                  class="text-blue-600"
-                >
-                  Documentos Admissionais
-                </a>
-              </p>
-            </div>
-          </div>
-        </section>
       </main>
-      <footer>
+
+      <!-- Footer -->
+      <footer role="contentinfo">
         <p>
-          © 2025 Deivison Santana - Técnico de T.I. Eletrodata Engenharia | Especialista em Infraestrutura<br />
-          <small class="text-gray-500"
-            >Profissional qualificado disponível para oportunidades em Feira de Santana e região</small
-          >
+          &copy; 2025 Deivison Santana — Técnico de T.I. Eletrodata Engenharia | Especialista em Infraestrutura
+          <br />
+          <small>Feira de Santana, BA — Brasil</small>
         </p>
       </footer>
     </div>
+
+    <script>
+      // Internationalization
+      const i18n = {
+        pt: {
+          profession: "Técnico de TI — Especialista em Infraestrutura",
+          downloadPdf: "Download PDF",
+          summaryTitle: "Resumo Profissional",
+          summaryText: "Profissional de TI com mais de 5 anos de experiência em infraestrutura, suporte técnico, redes e desenvolvimento web. Atuo com montagem e manutenção de computadores, administração de redes, gestão de chamados e automação de processos. Busco oportunidades para crescer tecnicamente e contribuir com soluções eficientes.",
+          experienceTitle: "Experiência Profissional",
+          job1: "Técnico de TI — Eletrodata Engenharia",
+          date1: "Julho 2025 — Atual",
+          resp1a: "Suporte técnico N3 para resolução de problemas complexos",
+          resp1b: "Formatação, instalação de sistemas operacionais e softwares",
+          resp1c: "Limpeza técnica, substituição de componentes e manutenção preventiva de PCs",
+          resp1d: "Administração de redes e infraestrutura de TI",
+          job2: "Técnico de Informática (Nível III)",
+          date2: "Janeiro 2025 — Junho 2025",
+          resp2a: "Suporte técnico N3 para resolução de problemas complexos",
+          resp2b: "Formatação, instalação de sistemas operacionais e softwares",
+          resp2c: "Gestão de inventário de equipamentos de TI",
+          job3: "Assistente de Suporte Técnico",
+          date3: "Julho 2024 — Outubro 2024",
+          resp3a: "Suporte técnico para provedor de internet com foco em conectividade",
+          resp3b: "Diagnóstico de problemas de hardware e software em equipamentos de rede",
+          resp3c: "Configuração e troubleshooting de roteadores e equipamentos de rede",
+          resp3d: "Gestão de chamados técnicos através de sistemas específicos",
+          resp3e: "Atendimento técnico presencial e remoto para clientes",
+          resp3f: "Manutenção preventiva e corretiva de equipamentos de informática",
+          job4: "Técnico em T.I.",
+          date4: "Novembro 2023 — Abril 2024",
+          resp4a: "Montagem, desmontagem e manutenção completa de computadores e notebooks hospitalares",
+          resp4b: "Implementação do sistema GLPI para gestão centralizada de chamados",
+          resp4c: "Formatação, instalação de sistemas operacionais e configuração de softwares",
+          resp4d: "Manutenção corretiva e preventiva de impressoras e periféricos",
+          resp4e: "Suporte técnico N1 e administração básica do Active Directory",
+          resp4f: "Desenvolvimento de scripts de automação para otimização de processos",
+          job5: "Especialista de Relacionamento com Cliente I",
+          date5: "Maio 2023 — Agosto 2023",
+          resp5a: "Atendimento ao cliente via voz e chat para produtos do Mercado Livre",
+          resp5b: "Resolução de problemas e esclarecimento de dúvidas técnicas",
+          resp5c: "Orientação a metas e resultados em ambiente de alta demanda",
+          resp5d: "Comunicação eficaz e foco na satisfação do cliente",
+          job6: "Repositor",
+          date6: "Março 2023 — Maio 2023",
+          resp6a: "Separação e organização de pedidos para distribuição",
+          resp6b: "Controle de estoque e recebimento de mercadorias",
+          educationTitle: "Formação Acadêmica",
+          edu1: "Técnico em Informática — Eletrodata CETENS/UFRB",
+          edu1Date: "2024 — 2025",
+          edu2: "Ensino Médio Completo",
+          edu2Date: "Concluído",
+          skillsTitle: "Habilidades Técnicas",
+          cat1: "Infraestrutura e Redes",
+          cat2: "Desenvolvimento e Automação",
+          cat3: "Sistemas Operacionais",
+          cat4: "Suporte Técnico e Redes",
+          diffTitle: "Diferenciais",
+          diff1: "Excelência Técnica",
+          diff1Desc: "Ampla experiência em montagem, desmontagem e manutenção completa de computadores e notebooks, com foco em qualidade e precisão técnica.",
+          diff2: "Ambiente de Alta Performance",
+          diff2Desc: "Experiência em ambientes críticos com foco em produtividade, agilidade e organização para maximizar resultados.",
+          diff3: "Visão Sustentável",
+          diff3Desc: "Conhecimento em práticas de reaproveitamento e otimização de recursos, contribuindo para sustentabilidade empresarial.",
+          diff4: "Compromisso Profissional",
+          diff4Desc: "Residente em Feira de Santana, com disponibilidade total e comprometimento com resultados de qualidade.",
+          additionalTitle: "Informações Complementares",
+          add1: "Disponibilidade",
+          add1Desc: "Horário comercial, plantões e emergências.",
+          add1Immediate: "Início imediato",
+          add2: "Transporte",
+          add2Desc: "Transporte público e bicicleta",
+          add2Cnh: "(CNH em processo)",
+          add3: "Localização",
+          add3Desc: "44090-728 — Feira de Santana, BA",
+          add4: "Documentação",
+          add4Link: "Documentos Admissionais",
+          portfolioTitle: "Portfólio",
+          portfolioDesc: "Projetos e trabalhos desenvolvidos:",
+          portfolioLink: "Visualizar Portfolio Completo no GitHub"
+        },
+        en: {
+          profession: "IT Technician — Infrastructure Specialist",
+          downloadPdf: "Download PDF",
+          summaryTitle: "Professional Summary",
+          summaryText: "IT professional with over 5 years of experience in infrastructure, technical support, networking, and web development. I work with computer assembly and maintenance, network administration, ticketing management, and process automation. I seek opportunities to grow technically and contribute with efficient solutions.",
+          experienceTitle: "Professional Experience",
+          job1: "IT Technician — Eletrodata Engenharia",
+          date1: "July 2025 — Present",
+          resp1a: "N3 technical support for complex problem resolution",
+          resp1b: "OS formatting, installation, and software configuration",
+          resp1c: "Technical cleaning, component replacement, and preventive PC maintenance",
+          resp1d: "Network administration and IT infrastructure",
+          job2: "IT Technician (Level III)",
+          date2: "January 2025 — June 2025",
+          resp2a: "N3 technical support for complex problem resolution",
+          resp2b: "OS formatting, installation, and software configuration",
+          resp2c: "IT equipment inventory management",
+          job3: "Technical Support Assistant",
+          date3: "July 2024 — October 2024",
+          resp3a: "Technical support for ISP with focus on connectivity",
+          resp3b: "Hardware and software diagnostics for network equipment",
+          resp3c: "Router and network equipment configuration and troubleshooting",
+          resp3d: "Ticket management through dedicated systems",
+          resp3e: "On-site and remote technical customer service",
+          resp3f: "Preventive and corrective maintenance of IT equipment",
+          job4: "IT Technician",
+          date4: "November 2023 — April 2024",
+          resp4a: "Assembly, disassembly, and full maintenance of hospital computers and laptops",
+          resp4b: "GLPI implementation for centralized ticket management",
+          resp4c: "OS formatting, installation, and software configuration",
+          resp4d: "Corrective and preventive maintenance of printers and peripherals",
+          resp4e: "N1 technical support and basic Active Directory administration",
+          resp4f: "Automation script development for process optimization",
+          job5: "Customer Relationship Specialist I",
+          date5: "May 2023 — August 2023",
+          resp5a: "Customer support via voice and chat for Mercado Livre products",
+          resp5b: "Problem resolution and technical clarification",
+          resp5c: "Goal-oriented performance in high-demand environments",
+          resp5d: "Effective communication and customer satisfaction focus",
+          job6: "Stock Clerk",
+          date6: "March 2023 — May 2023",
+          resp6a: "Order picking and organization for distribution",
+          resp6b: "Inventory control and merchandise receiving",
+          educationTitle: "Education",
+          edu1: "IT Technician — Eletrodata CETENS/UFRB",
+          edu1Date: "2024 — 2025",
+          edu2: "High School Completed",
+          edu2Date: "Completed",
+          skillsTitle: "Technical Skills",
+          cat1: "Infrastructure and Networking",
+          cat2: "Development and Automation",
+          cat3: "Operating Systems",
+          cat4: "Technical Support and Networking",
+          diffTitle: "Differentials",
+          diff1: "Technical Excellence",
+          diff1Desc: "Extensive experience in assembly, disassembly, and full maintenance of computers and laptops, with focus on quality and technical precision.",
+          diff2: "High-Performance Environment",
+          diff2Desc: "Experience in critical environments with focus on productivity, agility, and organization to maximize results.",
+          diff3: "Sustainability Focus",
+          diff3Desc: "Knowledge in reuse practices and resource optimization, contributing to corporate sustainability.",
+          diff4: "Professional Commitment",
+          diff4Desc: "Based in Feira de Santana, with full availability and commitment to quality results.",
+          additionalTitle: "Additional Information",
+          add1: "Availability",
+          add1Desc: "Business hours, on-call and emergencies.",
+          add1Immediate: "Available immediately",
+          add2: "Transportation",
+          add2Desc: "Public transportation and bicycle",
+          add2Cnh: "(Driver's license in process)",
+          add3: "Location",
+          add3Desc: "44090-728 — Feira de Santana, BA",
+          add4: "Documents",
+          add4Link: "Admission Documents",
+          portfolioTitle: "Portfolio",
+          portfolioDesc: "Projects and deliverables:",
+          portfolioLink: "View Full Portfolio on GitHub"
+        }
+      };
+
+      function setLang(lang) {
+        localStorage.setItem('cv-lang', lang);
+        document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+        document.getElementById('btnPt').classList.toggle('active', lang === 'pt');
+        document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+        updateTexts(lang);
+      }
+
+      function updateTexts(lang) {
+        const t = i18n[lang];
+        if (!t) return;
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (t[key] !== undefined) {
+            el.textContent = t[key];
+          }
+        });
+      }
+
+      // Initialize language
+      (function() {
+        const saved = localStorage.getItem('cv-lang') || 'pt';
+        setLang(saved);
+      })();
+    </script>
   </body>
 </html>
